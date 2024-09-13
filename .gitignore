@@ -9,21 +9,24 @@ node_modules/
 dist/
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 *.tsbuildinfo
 
-# NestJS Backend
-/backend/webguard-backend/node_modules
-/backend/webguard-backend/dist
-/backend/webguard-backend/debug
-
 # React Frontend
-/frontend/node_modules
-/frontend/build
-/frontend/.eslintcache
-/frontend/.next/
-/frontend/.turbo
-/frontend/.vercel
+/frontend/webguard-frontend/node_modules
+/frontend/webguard-frontend/build
+/frontend/webguard-frontend/.eslintcache
+/frontend/webguard-frontend/.next/
+/frontend/webguard-frontend/.turbo
+/frontend/webguard-frontend/.vercel
+
+# .NET / C# Backend
+backend/webguard-backend/bin/
+backend/webguard-backend/obj/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
 # Python
 __pycache__/
@@ -43,19 +46,7 @@ venv/
 /ai-model/.pytest_cache
 /ai-model/.env
 
-# MacOS
-*.DS_Store
-
-# Linux
-*~
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
 # IDE and Editor settings
-.vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
@@ -65,13 +56,3 @@ logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-
-# Dependency directories and build output
-build/
-lib-cov/
-coverage/
-htmlcov/
-.tox/
-.nyc_output/
-.cache/
-temp/
