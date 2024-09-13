@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4xhnDUJOC27WjszIQqU7p8W0PR+lRPQYLO6Vc7m9TaA=",
+  "Source": "WebGuardBackend",
+  "BasePath": "_content/WebGuardBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
