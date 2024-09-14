@@ -50,6 +50,14 @@ namespace WebGuardBackend.Controllers
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var jwtToken = tokenHandler.WriteToken(token);
 
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Expires = DateTime.UtcNow.AddDays(7),
+            };
+            
+            Response.Cookies.Append("jwt", jwtToken, cookieOptions);
+                
             return Ok(new {token = jwtToken});
         }
     }
